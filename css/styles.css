@@ -26,6 +26,7 @@ ul {
 body {
   margin: 0;
   font-family: 'Bai Jamjuree', sans-serif;
+  max-width: 1440px;
 }
 
 .header {
@@ -35,19 +36,58 @@ body {
   padding: 123px 32px 160px;
   text-align: center;
   margin-bottom: -160px;
+  margin-inline: auto;
 }
 @media screen and (min-width: 768px) {
   .header {
     background-image: url(../assets/images/bg-header-desktop.png);
     background-repeat: no-repeat;
-    width: 1439px;
+    width: 1444px;
+    margin-inline: auto;
   }
 }
 .container {
+  width: 19.4375rem;
+  margin-inline: auto;
+  margin-bottom: 11.625rem;
   text-align: center;
-  width: 375px;
-  padding: 32px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 45.625rem;
+    margin-bottom: 9.375rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__computer {
+    position: relative;
+    left: -400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__icon--small {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__computer--title {
+    width: 350px;
+    text-align: center;
+  }
+}
+
 .logo {
   margin-inline: auto;
 }
@@ -72,7 +112,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .text {
-    width: 730px;
     margin-inline: auto;
   }
 }
@@ -113,7 +152,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .buttons__final {
-    width: 1439px;
   }
 }
 
@@ -148,12 +186,37 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 375px;
   height: 500px;
   background-color: rgba(158, 171, 178, 0.104);
   padding: 52px 108px 51px;
-  gap: 25px;
+  gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    height: 150px;
+    gap: 50px;
+  }
+}
+.container__faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container__faqs {
+    display: grid;
+    width: 480px;
+    grid-template-columns: repeat(3, 10rem);
+    text-align: left;
+    align-items: center;
+    margin-bottom: 0;
+  }
 }
 .footer__logo {
   width: 55px;
