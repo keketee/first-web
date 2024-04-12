@@ -167,6 +167,11 @@ body {
   color: #4c545c;
   font-weight: 400;
 }
+@media (hover: hover) {
+  .footer__text:hover {
+    color: #26bba4;
+  }
+}
 .footer__icon {
   display: flex;
   flex-direction: row;
