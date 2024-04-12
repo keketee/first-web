@@ -26,7 +26,7 @@ ul {
 body {
   margin: 0;
   font-family: 'Bai Jamjuree', sans-serif;
-  width: 1440px;
+  max-width: 1440px;
 }
 
 .header {
